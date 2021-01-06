@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Playfair+Display:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    color: rgba(255, 255, 255, 0.9);
+    background: black
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 2px;
+    text-decoration: none;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    font-size: 24px;
+    padding: 25px;
+    width: 100vw;
+    max-height: 5vh;
+    background-color: rgba(255, 66, 107, 0.103);
+}
+
+.logo {
+    margin-top: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color:  rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a:hover,
+a:focus {
+    opacity: 50%;
+    border-bottom: 3px solid transparent;
+}
+
+/* Home Section */
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    float: left;
+    width: 60%;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.hero {
+    width: 30%;
+    padding: 20px;
+}
+
+.button {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 28px;
+    font-family: 'Playfair Display', serif;
+    opacity: 1;
+    transition: .3s;
+    cursor: pointer;
+    background-color: rgba(255, 66, 107, 0.103);
+}
+
+.button a {
+    color: #ffffffb3;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    opacity: 90%;
+}
+
+img {
+    display: block;
+    height: auto;
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+/* About section */
+.about-container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.about-btn {
+    color: white;
+    background-color: rgba(255, 66, 110);
+}
+
+/* Resume section */
+.resume-container {
+    display: block;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin-bottom: 100px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 50%;
+    width: 100%;
+    min-height: 1px;
+    padding: 0 15px;
+}
+
+.wrapper h2 {
+    font-size: 20px;
+}
+
+.resume-item {
+    padding: 20px;
+    background: #333;
+    margin-bottom: 5px;
+    border-radius: 7px; 
+}
+  
+.resume-item .date {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffffb3; 
+}
+  
+.resume-item .school {
+    display: block;
+    font-size: 16px; 
+    color: #ffffffb3;
+}
+  
+.resume-item h3 {
+    color:  rgba(255, 66, 110);
+    font-size: 17px; 
+}
+
+/* Project section */
+.proj-container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.proj-container>* {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.card {
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+    max-width: 320px;
+    height: auto;
+    background-color: #333;
+}
+
+.title {
+    color: #ff426e;
+}
+
+.project-button {
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    padding: 8px;
+    background-color: rgba(255, 66, 110);
+    cursor: pointer;
+}
+
+.project-button:hover {
+    opacity: 90%;
+}
+
+.project-button a {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* contact section */
+.fab {
+    float: right;
+    font-size: 40px;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: -35px;
+    cursor: pointer;
+    color: rgb(255, 66, 107);
+}
+
+.fab:hover {
+    color: rgba(255, 66, 110, 0.9);
+}
+
+#name, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#subject {
+    height: 200px;
+}
+
+#submit {
+    background-color:  rgb(255, 66, 107);
+    color: #fff;
+    font-weight: 500;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgba(255, 66, 110, 0.9);
+}
+
+.contact-container {
+    border-radius: 5px;
+    background-color: #333;
+    padding: 20px;
+}
+
+/* footer */
+footer {
+  background-color: rgba(51, 51, 51, 0.294);
+  padding: 12px;
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media screen and (max-width:760px) {
+    .navbar a {
+        display: none;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .about-container {
+        width: 95%;
+    }
+
+    .proj-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .contact-container {
+        margin: 0 20px;
+    }
+}
+
+/* I looked at some code snippets on w3schools and dev.moz to lay out my website just the way i needed to */

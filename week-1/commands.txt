@@ -1,0 +1,14 @@
+             The Command Line Interface
+
+1) mkdir .[name of folder you want to create]. 
+example,    mkdir .mysecretfolder 
+	ls -a to display hidden files/folders
+ 
+        
+2) mkdir -p 
+example, mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+    
+ 
+3) echo -e "first message \n second message" >> test.txt
+
+    

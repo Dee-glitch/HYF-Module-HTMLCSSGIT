@@ -94,6 +94,10 @@ a:focus {
     margin-top: 60px;
 }
 
+span {
+    color: rgba(255, 66, 110);
+}
+
 .hero {
     width: 30%;
     padding: 20px;

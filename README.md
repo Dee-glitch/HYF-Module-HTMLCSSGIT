@@ -1,3 +1,4 @@
 # HYF-Module-HTMLCSSGIT
 
-Week-1 https://dee-glitch.github.io/digital-resume/
+Week-1 <br>
+https://dee-glitch.github.io/HYF-Module-HTMLCSSGIT/week-1/digital-resume/index.html

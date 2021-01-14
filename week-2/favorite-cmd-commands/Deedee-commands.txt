@@ -1,0 +1,5 @@
+mkdir — Create a directory
+touch - Create files
+ls - Lists directory contents
+cd - Change directory
+locate - Locate a specific file

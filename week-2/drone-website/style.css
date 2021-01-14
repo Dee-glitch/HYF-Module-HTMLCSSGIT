@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #FD4F27;
+    background: linear-gradient(to bottom, #00416a, #e4e5e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+    width: 100vw;
+    max-height: 5vh;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h1 {
+    background-color: #1b0d0d4f;
+    font-size: 3em;
+}
+
+/* I looked an example on the developer.mozilla page for this animation */
+h2 {
+    font-size: 2rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {margin-left: 50%; width:100%;}
+    to {margin-left: 0%; width:100%;}
+}
+
+
+/* grid floats section */
+#grid-floats .grid-item { 
+    float: left;
+    margin: 19px;
+    width: 20%;
+    height: 390px;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.grid-item {
+    cursor:pointer;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius:4px;
+    background-color: white;
+    transition: all 0.3s linear;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item:hover {
+    transform: rotate(-1deg);
+}
+
+/* grid flex section */
+#grid-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#grid-flex .grid-item {
+    flex: 0 1 auto;
+    width: 20%;
+}
+
+
+@media only screen and (max-width: 600px) {
+/* grid floats */
+    #grid-floats .grid-item { 
+        width: 90%;
+        overflow: hidden;
+    }
+ /* grid flex */    
+    #grid-flex .grid-item {
+        width: 90%;
+        margin-right: -28px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+/* grid floats */
+    #grid-floats .grid-item { 
+        width: 24%;
+    }
+
+   #grid-floats .grid-item:nth-child(1){
+    	width: 50%;
+  }
+  
+ /* grid flex */  
+    #grid-flex .grid-item {
+        width: 26%;
+    }
+
+    #grid-flex .grid-item:nth-child(1) {
+     	width: 50%;
+ }
+
+    #grid-flex .grid-item:nth-child(2) {
+     width: 30%;
+ }
+}
+
+@media only screen and (min-width: 1024px) {
+/* grid floats */
+
+   #grid-floats .grid-item:nth-child(1){
+        width: 35%;
+        overflow: hidden;
+        margin-left: 100px;
+  }
+
+/* grid flex */ 
+   #grid-flex .grid-item:nth-child(1) {
+         width: 45%;
+ }
+}
+

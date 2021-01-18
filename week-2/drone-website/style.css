@@ -110,7 +110,6 @@ li {
 /* grid floats */
     #grid-floats .grid-item { 
         width: 24%;
-        margin: 0;
     }
 
    #grid-floats .grid-item:nth-child(1){

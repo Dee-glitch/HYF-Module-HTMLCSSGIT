@@ -96,13 +96,12 @@ li {
 @media only screen and (max-width: 600px) {
 /* grid floats */
     #grid-floats .grid-item { 
-        width: 90%;
+        width: 80%;
         overflow: hidden;
     }
  /* grid flex */    
     #grid-flex .grid-item {
-        width: 90%;
-        margin-right: -28px;
+        width: 80%;
     }
 }
 

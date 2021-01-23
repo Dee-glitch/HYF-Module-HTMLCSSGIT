@@ -16,22 +16,26 @@ body {
     background: linear-gradient(to bottom, #00416a, #e4e5e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-h1, h2 {
+header {
+    background-color: #1b0d0d4f;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 25px;
-    width: 100vw;
-    max-height: 5vh;
+    justify-content: center;
+}
+
+h1, h2 {
     font-weight: 300;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h1 {
-    background-color: #1b0d0d4f;
     font-size: 3em;
 }
 
+section h2 {
+    display: inline-block;
+    width: 100%;
+}
 /* I looked an example on the developer.mozilla page for this animation */
 h2 {
     font-size: 2rem;
@@ -139,4 +143,3 @@ li {
          width: 45%;
  }
 }
-

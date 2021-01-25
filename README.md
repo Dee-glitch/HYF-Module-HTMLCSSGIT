@@ -5,3 +5,6 @@ https://dee-glitch.github.io/HYF-Module-HTMLCSSGIT/week-1/digital-resume/index.h
 
 Week-2 <br>
 https://dee-glitch.github.io/HYF-Module-HTMLCSSGIT/week-2/drone-website/index.html
+
+Week-3 <br>
+https://dee-glitch.github.io/HYF-Module-HTMLCSSGIT/week-3/patreon-clone/index.html

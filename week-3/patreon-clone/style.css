@@ -91,11 +91,6 @@ input[type=text]:focus {
 }
 
 /* testimonial section */
-.container-fluid .row {
-    justify-content: center;
-    align-items: center;
-}
-
 .thumbnail img {
     max-width: 300px;
     margin-left: 60px;
